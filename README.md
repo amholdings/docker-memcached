@@ -11,4 +11,4 @@ cd docker-memcached
 docker build --tag="docker-memcached" .
 
 # Run Container:
-docker run -it --rm --name "docker-memcached" amholdings/docker-memcached
+docker run -d --name "docker-memcached" -p 11211:11211 -t amholdings/docker-memcached
